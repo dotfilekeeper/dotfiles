@@ -19,6 +19,7 @@ set smartcase
 set hidden
 
 set lazyredraw
+" set listchars=eol:↲,nbsp:☠,tab:▸␣
 set langmap=йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ\;qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 
 set nocompatible
@@ -42,6 +43,7 @@ set virtualedit=all                         " feel free to navigate anywhere
 set formatoptions=tcqrn                     " define text format options
 set wildmenu                                " show pretty line on completion
 set shm=aoOAI
+set showbreak=>>>\ \ 
 
 "#prevent typing :noh all time
 set hlsearch                     " Also switch on highlighting the last used search pattern.
@@ -146,7 +148,7 @@ autocmd FileType text setlocal textwidth=78
   endfunction
 
 "# thanks a lot!
-  let g:snips_author = '_A_l_e_x_a_n_d_e_r_ _M_i_s_h_c_h_e_n_k_o_'
+  let g:snips_author = 'Alexander Mishchenko'
 "}}}
 autocmd FileType snippet set ai
 autocmd FileType snippet set flp+=
@@ -456,9 +458,9 @@ map <space> <Plug>(easymotion-bd-w)
 let g:airline_theme='jay'
 set cursorline
 map <C-h> :noh<return>
+syntax match EveryCommas "\v\,"
+highlight EveryCommas ctermbg=red guibg=red
 
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" match ExtraWhitespace /\s\+$/
 highlight ColorColumn ctermbg=235 ctermfg=9
 " let &colorcolumn="100"
 set laststatus=2
@@ -468,6 +470,8 @@ highlight StatusLine ctermbg=black
 highlight StatusLineNC ctermbg=black
 highlight Folded ctermbg=233
 highlight LineNr ctermfg=darkgrey
+highlight NonText ctermfg=red
+highlight SpecialKey ctermfg=red
 " highlight CursorLineNr ctermbg=170
 set wildmenu
 

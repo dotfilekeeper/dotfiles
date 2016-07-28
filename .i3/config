@@ -134,7 +134,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-############# custom shortcuts ################## 
+############# custom shortcuts ##################
 bindsym $mod+Control+$up exec i3lock -c 000021 --ringcolor 52665522 --keyhlcolor 55555555 --insidevercolor 55555555 --ringvercolor 66666666
 bindsym XF86AudioMute exec "amixer set Master toggle && killall -USR1 i3status"
 bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+ && killall -USR1 i3status"
@@ -156,8 +156,8 @@ bar {
         tray_output primary
 }
 
-client.focused #3D3D3D #3D3D3D #fdf6e3 #3D3D3D 
-client.focused_inactive #6D6D6D #6D6D6D #fdf6e6 #6D6D6D 
+client.focused #3D3D3D #3D3D3D #fdf6e3 #3D3D3D
+client.focused_inactive #6D6D6D #6D6D6D #fdf6e6 #6D6D6D
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 client.unfocused #1D1D1D #1D1D1D #93a1a1 #1D1D1D
 

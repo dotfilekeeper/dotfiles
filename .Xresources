@@ -1,7 +1,7 @@
 !look and feel
 xterm.termName: xterm-256color
-xterm*scrollBar: true
-xterm*rightScrollBar: true
+! xterm*scrollBar: true
+! xterm*rightScrollBar: true
 xterm*loginshell: true
 xterm*background:  black
 xterm*foreground: white
@@ -16,9 +16,10 @@ xterm*colorULMode: false
 xterm*colorBDMode: false
 Xcursor.theme: DMZ-Black
 Xft.hintstyle: hintslight
-xterm*saveLines: 4096
-xterm*faceName: DejaVu Sans Mono:size=10
-xterm*faceNameDoublesize: Noto Sans Mono CJK SC:size=10
+xterm*saveLines: 8192
+xterm*faceName: Inconsolata-g  Mono:size=8
+! xterm*faceName: Inconsolata-g DejaVu Sans Mono:size=8
+xterm*faceNameDoublesize: Noto Sans Mono CJK SC:size=8
 xterm*metaSendsEscape: true
 
 xterm*translations: #override \
